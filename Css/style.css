@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    min-height: 100px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-variant: small-caps;
+    padding: 15px 5px 5px 5px;
+}
+
+header aside a {
+    color: white;
+    text-decoration: none;
+}
+header aside a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 10px 0px;
+}
+main h2 {
+    text-align: center;
+}
+main section {
+    padding: 8vh 10px;
+}
+main section p {
+    max-width: 250px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    line-height: 35px;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0px 0px 0px 10px;
+}
+
+
+main section.imagem-d-fundo {
+    background-color: blue;
+    box-shadow: inset 0px 1px 10px 3px rgb(0 0 0 / 54%);
+}
+main section.imagem-d-fundo p {
+    background-color: rgba(0, 0, 0, 0.586);
+    color: white;
+    text-shadow: 1px 1px black;
+    border-radius: 10px;
+}
+
+main section#primeira-imagem {
+    color: rgb(0, 0, 0);
+    background-image: url(../Imagens/simbolos.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main section#segunda-imagem {
+    background-image: url(../Imagens/card.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 1.15em;
+    padding: 10px;
+}
+footer div {
+    margin: auto;
+}
+footer strong {
+    font-style: italic;
+}
+footer ul li {
+    display: inline-block;
+}
+footer img {
+    width: 30px;
+}
+
+
+@media (max-width: 500px) {
+    main h2 {
+        font-size: 1.2em;
+    }
+
+    main section p {
+        font-size: 4vw;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width: 400px) {
+    main section p {
+        font-size: 5vw;
+    }
+}
